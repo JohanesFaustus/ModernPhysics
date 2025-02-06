@@ -1,0 +1,63 @@
+\documentclass[10pt]{report} 
+\title{Modern Physics}
+\author{EFF}
+\date{\today}
+
+\usepackage[paperheight=25.5 cm ,paperwidth=14.25cm,left=1.75cm,right=1.75cm,top=1.5cm,bottom=1.5cm]{geometry}
+\usepackage{amsmath, esdiff, esint, indentfirst, textcomp, longtable, float, amssymb,csquotes }
+\usepackage[]{graphicx}
+\usepackage{subcaption}
+\usepackage[]{subfiles}
+\usepackage[]{caption}
+\graphicspath{ {./Rss/} }
+
+\usepackage[]{svg}
+\usepackage{ifluatex}
+\ifluatex
+\usepackage{pdftexcmds}
+  \makeatletter
+  \let\pdfstrcmp\pdf@strcmp
+  \let\pdffilemoddate\pdf@filemoddate
+  \makeatother
+\fi 
+
+\usepackage[]{titlesec}
+\titleformat{\subsubsection}[runin]{ \bfseries}{}{}{\indent}
+\titleformat{\section}[hang]{\Large \bfseries}{\thesection.}{0.5em}{\centering}
+
+
+\begin{document}
+\pagestyle{empty}
+
+\subfile{./Sec/Title/Title.tex}
+\clearpage
+
+\section*{Modern Physics Chronology}
+\subfile{./Sec/Chronology/Chrono.tex}
+\clearpage 
+
+\section*{Relativity}
+\subfile{./Sec/Relativity/Rel.tex}
+\clearpage
+\subfile{./Sec/Relativity/Appen.tex}
+\clearpage
+
+\section*{Quantum Mechanics}
+\subfile{./Sec/QM/QM.tex}
+\clearpage
+
+\section*{Atom}
+\subfile{./Sec/Atom/Atom.tex}
+\clearpage
+\subfile{./Sec/Atom/AtomAppen.tex}
+\clearpage
+
+\section*{Statistical Mechanics}
+\subfile{./Sec/StatMech/StatMech.tex}
+\clearpage
+
+\section*{Wave}
+\subfile{./Sec/Waves/Wav.tex}
+\clearpage
+
+\end{document}

@@ -1,0 +1,30 @@
+\documentclass[10pt]{article}
+\usepackage[paperheight=25.5 cm ,paperwidth=14.25cm,left=1.5cm,right=1.5cm,top=1.5cm,bottom=1.5cm]{geometry}
+\usepackage{amsmath, amssymb, amsfonts, esdiff, esint, indentfirst, textcomp, longtable }
+\usepackage[]{graphicx}
+\usepackage{subcaption}
+\usepackage[]{subfiles}
+\usepackage[]{caption}
+
+\usepackage[]{svg}
+\usepackage{ifluatex}
+\ifluatex
+  \usepackage{pdftexcmds}
+  \makeatletter
+  \let\pdfstrcmp\pdf@strcmp
+  \let\pdffilemoddate\pdf@filemoddate
+  \makeatother
+\fi 
+
+\begin{document}
+\subsection*{Appendix: Tugas 1 Gelombang 29 Agustus 2024}
+\subsubsection*{Soal 1: Massa dalam pendulum.} Dari gambar 1, berapkah frekuensi sudut sistem dan persamaan yang harus dipenuhi sehingga sistem memiliki periode sebesar 1 detik?
+\subsubsection*{Soal 2: Massa pada tali.} Dari gambar 1, berapakah frekuensi sudut sistem?
+\begin{figure}[h]
+    \centering
+    \includesvg[height=0.4\textwidth, inkscape=force]{../Rss/Waves/Appen/GHSPend.svg}
+    \includesvg[width=0.4\textwidth, inkscape=force]{../Rss/Waves/Appen/GHSTali.svg}
+    \caption*{Gambar 1: GHS pada ayunan massa (soal 1) dan massa pada tali (soal 2).}
+  \end{figure}
+
+\end{document}
