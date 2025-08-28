@@ -1,6 +1,6 @@
-\documentclass[../main.tex]{subfiles}
+\documentclass[../../main.tex]{subfiles}
 \begin{document}
-\subsection*{Einstein's Postulates}
+\subsection{Einstein's Postulates}
 \begin{quote}
     1. \textbf{The principle of relativity.} The laws of physics apply in all inertial
 reference systems.
@@ -9,7 +9,7 @@ reference systems.
 same for all inertial observers, regardless of the motion of the source.
 \end{quote}
 
-\subsection*{Lorentz Transformations}
+\subsection{Lorentz Transformations}
 \textbf{Galilean transformations.} If we “start the clock” ($t = 0$) at the moment the origins ($\mathcal{O}$ and $\bar{\mathcal{O}}$) coincide, then at time $t$, $\bar{\mathcal{O}}$ will be a distance $vt$ from $\mathcal{O}$, and hence
 \begin{equation*}
     x=d + vt
@@ -23,8 +23,8 @@ where d is the distance from $\bar{\mathcal{O}}$ to $\bar{A}$ at time t. Classic
 \end{align*}
 \begin{figure*}[b]
     \centering
-    \includegraphics[width=0.45\linewidth]{../Rss/Relativity/Transformation1.png}
-    \includegraphics[width=0.45\linewidth]{../Rss/Relativity/Transformation2.png}
+    \dfig{../../Rss/Relativity/Transformation1.png}
+    \dfig{../../Rss/Relativity/Transformation2.png}
     \caption*{Figure: Reminder that in relativity there is no absolute velocity. $\bar{S}$ slides along the $x$ axis at speed $v$ (with $S$ being at rest) is the same as $S$ slides along the $x$ axis at speed $-v$ (with $\bar{S}$ being at rest). Of course that is assuming both systems are inertial.}
 \end{figure*}
 
@@ -63,14 +63,14 @@ These are the famous Lorentz transformations. The reverse dictionary, which carr
     t&=\gamma\biggl(\bar{t}+ \frac{v}{c^2}\bar{x}\biggr)
 \end{align*}
 
-\subsection*{Relativity Geometry}
+\subsection{Relativity Geometry}
 \textbf{The relativity of simultaneity.} Imagine a freight car, traveling at constant speed along a smooth, straight track; someone then switches the lamp on, and the light spreads out in all directions at speed c. The two events in question occur simultaneously. However, to an observer on the ground these same two events are not simultaneous. For the beam going to the back end has a shorter distance to travel than the one going forward. According to this observer, therefore, event (b) happens before event (a). 
 \begin{quote}
     Two events that are simultaneous in one inertial system are not, in general, simultaneous in another.
 \end{quote}
 \begin{figure*}[b]
     \centering
-    \includegraphics[width=\textwidth]{../Rss/Relativity/Simultaneity}
+    \fullfig{../../Rss/Relativity/Simultaneity}
     \caption*{Figure: Train, freight car even}
 \end{figure*}
 Using Lorentz transformations we could also come to the sam conclusion. Suppose event A occurs at $x_A = 0$, $t_A = 0$, and event B occurs at $x_B = b$, $t_B = 0$. The two events are simultaneous in $S$. But they are not simultaneous in $\bar{S}$, for the Lorentz transformations give $\bar{x}_A = 0$, $\bar{t}_A = 0$ and $\bar{x}_B = \gamma x$, $\bar{t}_b = -\gamma(v/c^2)b$. According $\bar{S}$ then, B occurs before A, as before.
@@ -81,7 +81,7 @@ Using Lorentz transformations we could also come to the sam conclusion. Suppose 
 \end{equation*}
 \begin{figure*}
     \centering
-    \includegraphics[height=4cm]{../Rss/Relativity/TimeDilatation.png}
+    \normfig{../../Rss/Relativity/TimeDilatation.png}
     \caption*{How long does it take the light to make this trip?}
 \end{figure*}
 For an observer, however
@@ -108,7 +108,7 @@ To derive using Lorentz transformations, Suppose that at time $t = 0$ observer $
 \end{equation*}
 \begin{figure*}
     \centering
-    \includegraphics[height=4cm]{../Rss/Relativity/RelClocks.png}
+    \normfig{../../Rss/Relativity/RelClocks.png}
     \caption*{Figure: Clocks that are properly synchronized in one system will not be synchronized when observed from another system}
 \end{figure*}
 Those to the left of the origin (negative x) are ahead, and those to the right are behind. $S$ focuses his attention on a single clock at rest in the $\bar{S}$ frame, and watches it over some interval $\Delta t$. Because $\bar{x}$ is fixed, the Reverse Lorentz transformations gives
@@ -126,7 +126,7 @@ If $\Delta t_1$ is the time for the light signal to reach the front end, and $\D
 \end{equation*}
 \begin{figure*}[b]
     \centering
-    \includegraphics[width=\textwidth]{../Rss/Relativity/LorentzContraction.png}
+    \fullfig{../../Rss/Relativity/LorentzContraction.png}
     \caption*{Figure: Railway carriage, if you will}
 \end{figure*}
 solving for $\Delta t_1$ and $\Delta t_2$
@@ -168,7 +168,7 @@ To recover the more transparent notation, let $A$ be the particle, $B$ be $S$, a
     v_{AC}=\frac{v_{AB}+v_{BC}}{1-+(v_{AB}v_{BC}/c^2)}
 \end{equation*}
 
-\subsection*{Structure of Spacetime}
+\subsection{Structure of Spacetime}
 \textbf{Four-vectors.} The Lorentz transformations take on a simpler appearance when expressed in terms of the quantities
 \begin{equation*}
     x^0\equiv ct\qquad \beta\equiv \frac{v}{c}
@@ -271,8 +271,8 @@ If the displacement between two events is timelike ($I < 0$), there exists an in
 \textbf{Space-time diagrams.} On such a Minkowski diagrams, position plotted horizontally and time (or, better, $x^0 = ct$) vertically. Velocity is then given by the reciprocal of the slope. A particle at rest is represented by a vertical line; a photon, traveling at the speed of light, is described by a 45◦ line; and a rocket going at some intermediate speed follows a line of slope $c/v = 1/\beta$.
 \begin{figure*}
     \centering
-    \includegraphics[height=4cm]{../Rss/Relativity/MinkowskiDig.png}
-    \includegraphics[height=4cm]{../Rss/Relativity/WorldLine.png}
+    \normfig{../../Rss/Relativity/MinkowskiDig.png}
+    \normfig{../../Rss/Relativity/WorldLine.png}
     \caption*{Figure: Minkowski diagrams}
 \end{figure*}
 
@@ -281,7 +281,7 @@ The trajectory of a particle on a Minkowski diagram is called a world line. Beca
 Under Lorentz transformations, the interval $I$ is preserved, and the locus of all points with a given value of I is a hyperbola—or, if we include the y axis, a hyperboloid of revolution. When the displacement is timelike, it's a “hyperboloid of two sheets”; when the displacement is spacelike, it's a “hyperboloid of one sheet.” When you perform a Lorentz transformation, the coordinates ($x$, $t$) of a given event will change to ( $\bar{x}$, $\bar{t}$), but these new coordinates will lie on the same hyperbola as (x, t). No amount of transformation will carry it, say, from the upper sheet of the timelike hyperboloid to the lower sheet, or to a spacelike hyperboloid.
 \begin{figure*}
     \centering
-    \includegraphics[height=4cm]{../Rss/Relativity/Hypercones.png}
+    \normfig{../../Rss/Relativity/Hypercones.png}
     \caption*{Figure: Hypercones}
 \end{figure*}
 
@@ -303,7 +303,7 @@ Here's some neat summary
         \end{longtable}
 \end{center}
 
-\subsection*{Proper Time and Proper Velocity}
+\subsection{Proper Time and Proper Velocity}
 As you progress along your world line, your watch runs slow; while the clock on the wall ticks off an interval $dt$, your watch only advances $d\tau$:
 \begin{equation*}
     d\tau=\sqrt{1 - u^2/c^2}dt
@@ -394,7 +394,7 @@ For massless and relativistic particle
 \textbf{Michelson-Morley Experiment.} You alredy know the story of aether wind and how this experiment dissprove that model, so i'll omit that and focus on this experiment itself. The Michelson interferometer is represented in Figure \ref{fig:MMExperiment1}. Light from a single source reaches a half-silvered mirror and splits into two beams traveling at right angles to each other. The beams reach mirrors that send them back to the splitter, where they travel together to an eyepiece.
 \begin{figure}
     \centering
-    \includegraphics[height=4cm]{../Rss/Relativity/MichelsonMorley.png}
+    \normfig{../../Rss/Relativity/MichelsonMorley.png}
     \caption{Michelson-Morley Experiment}
     \label{fig:MMExperiment1}
 \end{figure}

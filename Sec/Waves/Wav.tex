@@ -1,6 +1,6 @@
-\documentclass[../main.tex]{subfiles}
+\documentclass[../../main.tex]{subfiles}
 \begin{document}
-\subsection*{One Variable Function}
+\subsection{One Variable Function}
 Wave can be represented by function of time or space. As function of time
 \begin{equation*}
     y = A \sin(\omega t) = A \sin(2\pi \nu t) =A\sin \frac{2\pi}{T}t
@@ -30,7 +30,7 @@ Using Euler's formula, sinusoidal wave can also be represented
     y=Ae^{i\omega t}
 \end{equation*}
 
-\subsection*{Standing and Traveling Waves}
+\subsection{Standing and Traveling Waves}
 standing wave is a wave in space with fixed nodes and antinodes and a time-varying amplitude
 \begin{equation*}
     y = A \sin(\omega t) \sin(kx)
@@ -42,7 +42,7 @@ A traveling wave keeps the same amplitude and shape but moves through space:
 \end{equation*}
 The velocity of a traveling wave can equivalently be written $v =\lambda \nu=\omega /k$. Note the difference between $v$ and $\nu$.
 
-\subsection*{Simple Harmonic Oscillator}
+\subsection{Simple Harmonic Oscillator}
 Many waves arise as solutions to the following differential equation
 \begin{equation*}
     \frac{d^2y}{dx^2}=-\omega^2y
@@ -54,14 +54,14 @@ The  general solutions below are
     &=De^{i\omega t} + Fe^{- i\omega t}
 \end{align*}
 
-\subsection*{Double Slit Interference }
+\subsection{Double Slit Interference }
 Consider two waves that are identical in every way meets at same space. Those two will Interfere. Suppose a wave of wavelength $\lambda$ passes through two narrow slits separated by a distance $2d$. The wave is then measured on a back wall a distance $L$ behind the wall with the slits. Places where the waves from the different paths interfere constructively to produce the maximum possible amplitude are called antinodes (bright), and places where they interfere destructively to produce no oscillation are called nodes (dark). The distance from the center of the back wall to the $n$th antinode is
 \begin{equation*}
     x_n=\frac{n\lambda}{2}\sqrt{\frac{4 (d^2 + L^2) - n^2\lambda^2}{4d^2 - n^2\lambda^2}}
 \end{equation*}
  \begin{figure*}
     \centering
-    \includegraphics[width=0.5\textwidth]{../Rss/Waves/2Slits.png}
+    \normfig{../../Rss/Waves/2Slits.png}
     \caption*{Figure: Double slit}
 \end{figure*}
 
@@ -71,20 +71,20 @@ This equation then can be approximated. For far-field approximation, we assume t
 \end{equation*}
 For small-angle approximation, we additionally assume $d \gg n\lambda$. Then $\phi \ll 1$ and we can use $\sin \psi\approx \tan\theta x/L$. This approximation is never valid if $d \gg \lambda$, but if $d \gg \lambda$ then it works for all the peaks up to $d \approx n\lambda$
 
-\subsubsection*{Diffraction grating.} Diffraction grating is a long line of evenly spaced slits. Assuming the back wall is far enough away that the waves from all slits travel at approximately the same angle to each point, the nodes and antinodes follow the same equations as the far-field and small-angle equations for a double slit. The difference is that the fringes show greater contrast when there are more slits. 
+\subsubsection{Diffraction grating.} Diffraction grating is a long line of evenly spaced slits. Assuming the back wall is far enough away that the waves from all slits travel at approximately the same angle to each point, the nodes and antinodes follow the same equations as the far-field and small-angle equations for a double slit. The difference is that the fringes show greater contrast when there are more slits. 
 
-\subsection*{Single Slit}
+\subsection{Single Slit}
 A diffraction pattern occurs when a wave passes through a single slit whose width $w$ is comparable to the wavelength $\lambda$. This produces one intense central maximum with smaller maxima on the sides, separated by nodes (dark fringes). In the far-field approximation the nodes occur at the following angles for positive integers $n$:
 \begin{equation*}
     \sin \psi=\frac{n\lambda}{w}
 \end{equation*}
 \begin{figure*}
     \centering
-    \includegraphics[width=0.5\textwidth]{../Rss/Waves/Slit.png}
+    \normfig{../../Rss/Waves/Slit.png}
     \caption*{Figure: Single slit}
 \end{figure*}
 
-\subsection*{Bragg's Law}
+\subsection{Bragg's Law}
 Bragg's law refers to the scattering of an incoming wave off multiple layers of a crystal. You get a strong reflected beam when the glancing angle $\theta$ meets the following condition for integer $n$
 \begin{equation*}
     \sin \theta=\frac{n\pi}{2s}
@@ -92,11 +92,11 @@ Bragg's law refers to the scattering of an incoming wave off multiple layers of 
 This looks similar to the far-field formula for a double slit, but here $\theta$ is the angle of the incoming beam and s is the spacing between atomic layers. By convention, Bragg's law is expressed in terms of glancing angle $\theta$ rather than angle of incidence ($\pi/2 - \theta$).
 \begin{figure*}
     \centering
-    \includegraphics[width=0.5\textwidth]{../Rss/Waves/Bragg.png}
+    \normfig{../../Rss/Waves/Bragg.png}
     \caption*{Figure: Waves reflecting off a crystal}
 \end{figure*}
 
-\subsection*{Electromagnetic Spectrum}
+\subsection{Electromagnetic Spectrum}
 There are no universally accepted conventions for the exact cutoffs between the different types,1 but this gives a general idea. The columns of the table are the frequency $\nu$, the wavelength ($\lambda = c/\nu$), the energy of a photon with that frequency ($E = h \nu$), and the temperature of a blackbody whose spectrum would peak at that frequency ($T \approx h \nu /2.82$ $k_B$ ).
 \begin{center}
     \begin{longtable}{| p{0.2\textwidth} | p{0.15\textwidth} | p{0.15\textwidth} | p{0.15\textwidth} | p{0.15\textwidth} |}
@@ -116,7 +116,7 @@ There are no universally accepted conventions for the exact cutoffs between the 
 Next, is electromagnetic radiation graph against frequency
 \begin{figure*}[h]
     \centering
-    \includegraphics[width=\textwidth]{../Rss/Waves/WaveSpectrum.png}
+    \fullfig{../../Rss/Waves/WaveSpectrum.png}
 \end{figure*}
 
 For visible light

@@ -1,7 +1,7 @@
-\documentclass[../main.tex]{subfiles}
+\documentclass[../../main.tex]{subfiles}
 \begin{document}
 
-\subsection*{Mass on A Spring}
+\subsection{Mass on A Spring}
 For small displacements the force produced by the spring is described by Hooke's law:
 \begin{equation*}
     F = -kx 
@@ -23,7 +23,7 @@ the roots of auxilary equation are therefore $D=\pm \omega i$. Thus, the general
     x=a\cos \omega t+ b \sin \omega t= A\cos \omega t +\phi
 \end{equation*}
 
-\subsubsection*{Energy of a mass on a spring.} The work done on the spring, extending it from $x'$ to $ x' + dx'$, is $kx'dx'$. Hence the work done extending it from its unstretched length by an amount x
+\subsubsection{Energy of a mass on a spring.} The work done on the spring, extending it from $x'$ to $ x' + dx'$, is $kx'dx'$. Hence the work done extending it from its unstretched length by an amount x
 \begin{equation*}
     U=\int_{0}^{x}kx'dx'= \frac{1}{2} kx^2
 \end{equation*}
@@ -36,10 +36,10 @@ substituting the value of $x$ and $v=dx/dt$, we get
     E=\frac{1}{2}kA^2
 \end{equation*}
 
-\subsection*{Pendulum}
+\subsection{Pendulum}
 \begin{figure*}[b]
     \centering
-    \includegraphics[height=0.4\textwidth]{../Rss/Waves/SHM/Pend.png}
+    \normfig{../../Rss/Waves/SHM/Pend.png}
     \caption*{The geometry of the simple pendulum}
 \end{figure*}
 By Newton's second law 
@@ -56,7 +56,7 @@ This is the equation of SHM with $ \omega=\sqrt{g/ l}$ and its general solution
     \theta=\theta_0 \cos \omega t +\phi
 \end{equation*}
 
-\subsubsection*{Energy of pendulum.} For small $\theta$, we have
+\subsubsection{Energy of pendulum.} For small $\theta$, we have
 \begin{align*}
     l^2& = (l - y)^2 + x^2\\
     2ly&=Y^2+x^2
@@ -98,7 +98,7 @@ giving
 \end{equation*}
 it follows that the angular frequency of oscillation $\omega$ is equal to $\sqrt{\beta/\alpha}$.
 
-\subsubsection*{Physical pendulum.} In a physical pendulum the mass is not concentrated at a point as in the simple pendulum, but is distributed over the whole body. An example of a physical pendulum consists of a uniform rod of length $l$ that pivots about a horizontal axis at its upper end. 
+\subsubsection{Physical pendulum.} In a physical pendulum the mass is not concentrated at a point as in the simple pendulum, but is distributed over the whole body. An example of a physical pendulum consists of a uniform rod of length $l$ that pivots about a horizontal axis at its upper end. 
 
 Noting that $\tau=I\ddot{\theta}=\mathbf{r}\times\mathbf{F}$
 \begin{align*}
@@ -113,12 +113,12 @@ Again we can use the small-angle approximation to obtain
 This is SHM with $\omega = \sqrt{3g/2l} $ and $T = 2\pi \sqrt{2l/3g}$.
 \begin{figure*}[h]
     \centering
-    \includegraphics[height=0.4\textwidth]{../Rss/Waves/SHM/PhysPend.png}
+    \normfig{../../Rss/Waves/SHM/PhysPend.png}
     \caption*{Physical pendulum}
 \end{figure*}
 
-\subsection*{Similarities in Physics}
-\subsubsection*{LC circuit.} Initially, capacitor is charged to voltage $V_C=q/C$ . Switch then closed and  charge begins to flow through the inductor and a current $\dot{q}$ flows in the circuit. This is a time-varying current and produces a voltage across the inductor given $V_L=L\ddot{q}$. We can analyse the LC circuit using Kirchhoff's law, which states that the sum of the voltages around the circuit is zero
+\subsection{Similarities in Physics}
+\subsubsection{LC circuit.} Initially, capacitor is charged to voltage $V_C=q/C$ . Switch then closed and  charge begins to flow through the inductor and a current $\dot{q}$ flows in the circuit. This is a time-varying current and produces a voltage across the inductor given $V_L=L\ddot{q}$. We can analyse the LC circuit using Kirchhoff's law, which states that the sum of the voltages around the circuit is zero
 \begin{align*}
     V_C+V_L&=\\
     \frac{q}{C}+L\ddot{q}&=0\\
@@ -133,7 +133,7 @@ The energy stored in a capacitor charged to voltage $V_C$ is equal to $(1/2) CV_
     &=\frac{1}{2}\frac{q^2}{C}+\frac{1}{2}LI^2
 \end{align*}
 
-\subsection*{Potential approach.} Suppose a system is oscillating inside potential $V(x)$. Using Taylor series, we rewite the potential at $x=x_0$ as
+\subsection{Potential approach.} Suppose a system is oscillating inside potential $V(x)$. Using Taylor series, we rewite the potential at $x=x_0$ as
 \begin{equation*}
     V(x)=V(x_0)+x\frac{dV}{dx}\bigg|_{x=x_0}+\frac{x^2}{2}\frac{d^2V}{dx^2}\bigg|_{x=x_0}+\dots
 \end{equation*}
@@ -150,13 +150,13 @@ Thus its frequency
     \omega=\biggl(\frac{1}{m}\frac{d^2V}{dx^2}\bigg|_{x=x_0}\biggr)^{1/2}
 \end{equation*} 
 
-\subsubsection*{Similarities in physics.} We note the similarities in both cases 
+\subsubsection{Similarities in physics.} We note the similarities in both cases 
 \begin{equation*}
     \ddot{Z}=-\frac{\beta}{\alpha}Z\qquad E=\frac{1}{2}\alpha\dot{Z}^2+\frac{1}{2}\beta Z^2
 \end{equation*}
 where $\alpha$ and $\alpha$ are constants and $Z = Z(t)$ is the oscillating quantity. In the mechanical case Z stands for the displacement $x$, and in the electrical case for the charge $q$.
 
-\subsection*{Damped harmonic oscillator} 
+\subsection{Damped harmonic oscillator} 
 The damping force $F_d$ acting on system is proportional to its velocity $v$ so long as $v$ is not too large. In another word
 \begin{equation*}
     F_d=-bv
@@ -185,7 +185,7 @@ Using the quadratic equation, we find the value of $D$
 The solution is therefore depend on the value of the square root term; which can either be real, imaginary or simply zero. The value of the square root also determine the cases of damping that occur on the system. 
 
 
-\subsubsection*{Light damping.} This case occur if $\gamma^2/4<\omega_0^2$, which causes the square root term to be imaginary. Let's us introduce yet another constant
+\subsubsection{Light damping.} This case occur if $\gamma^2/4<\omega_0^2$, which causes the square root term to be imaginary. Let's us introduce yet another constant
 \begin{equation*}
     \omega^2=\omega_0^2-\gamma^2/4
 \end{equation*}
@@ -215,23 +215,23 @@ or the natural logarithm version
 which is called the logarithmic decrement and is a measure of this decrease. 
 \begin{figure*}[b]
     \centering
-    \includegraphics[width=0.6\textwidth]{../Rss/Waves/DHM/Envelope}
+    \normfig{../../Rss/Waves/DHM/Envelope}
     \caption*{Figure: Graph of $x=A_0\exp(-\gamma^2t/4)\cos \omega t$}
 \end{figure*}
 
-\subsubsection*{Heavy damping.} Heavy damping occurs when the degree of damping is sufficiently large that the system returns sluggishly to its equilibrium position without making any oscillations at all. In another words, $\gamma^2/4 > \omega_0^2$ and the square root term is real. Thus, we can say that the equation is second order differential equation with two real auxilary equation roots. The solution is
+\subsubsection{Heavy damping.} Heavy damping occurs when the degree of damping is sufficiently large that the system returns sluggishly to its equilibrium position without making any oscillations at all. In another words, $\gamma^2/4 > \omega_0^2$ and the square root term is real. Thus, we can say that the equation is second order differential equation with two real auxilary equation roots. The solution is
 \begin{equation*}
     x=A\exp \biggl[\bigg(-\frac{\gamma}{2} + \big(\frac{\gamma^2}{4}-\omega_0^2\big)^{1/2}\bigg)t\biggr] +B \exp \biggl[\bigg(-\frac{\gamma}{2} - \big(\frac{\gamma^2}{4}-\omega_0^2\big)^{1/2}\bigg)t\biggr]
 \end{equation*}
 
-\subsubsection*{Critical damping.} Occurs when $\gamma^2/4 = \omega_0^2$, which makes the suqre roots zero. Thus the equation is second order differential equation with one real auxilary equation roots. The solution is
+\subsubsection{Critical damping.} Occurs when $\gamma^2/4 = \omega_0^2$, which makes the suqre roots zero. Thus the equation is second order differential equation with one real auxilary equation roots. The solution is
 \begin{equation*}
     x=(At+B)\exp\biggl(-\frac{\gamma t}{2}\biggr)
 \end{equation*}
 
 Here the mass, or whatever oscillating, returns to its equilibrium position in the shortest possible time without oscillating. 
 
-\subsubsection*{Putting all together.} In summary we find three types of damped motion:
+\subsubsection{Putting all together.} In summary we find three types of damped motion:
 \begin{enumerate}
     \item $\gamma^2/4<\omega_0^2$ Light damping, Imaginary square root, Damped oscillations;
     \item $\gamma^2/4>\omega_0^2$ Heavy damping, Real Square root, Exponential decay of displacement;
@@ -239,11 +239,11 @@ Here the mass, or whatever oscillating, returns to its equilibrium position in t
 \end{enumerate} 
 \begin{figure*}[h]
     \centering
-    \includegraphics[width=0.5\textwidth]{../Rss/Waves/DHM/DampMotion.png}
+    \normfig{../../Rss/Waves/DHM/DampMotion.png}
     \caption*{Figure: Motion of a damped oscillator for various cases}
 \end{figure*}
 
-\subsubsection*{RLC circuit.} In the case of an electrical oscillator it is the resistance in the circuit that impedes the flow of current. Kirchoff's law gives
+\subsubsection{RLC circuit.} In the case of an electrical oscillator it is the resistance in the circuit that impedes the flow of current. Kirchoff's law gives
 \begin{align*}
     L\ddot{q}+R\dot{q}+\frac{1}{C}q=0\\
     \ddot{q}+\frac{R}{L}\dot{q}+\frac{1}{LC}q=0\\
@@ -263,7 +263,7 @@ We find that the quality factor $Q$ of the circuit is given by
     Q=\frac{\omega_0}{\gamma}=  \frac{1}{R}\sqrt{\frac{L}{C}}
 \end{equation*}
 
-\subsection*{Energy of DHO}
+\subsection{Energy of DHO}
 In the case of very lightly damped oscillator $\gamma^2/4\ll \omega_0^2$ we have
 \begin{align*}
     x &= A_0\exp\biggl(-\frac{\gamma t}{2}\biggr)\cos\omega_0 t\\
@@ -286,7 +286,7 @@ The reciprocal of $\gamma$ is the time taken $\tau=1/\gamma$ for the energy of t
     E(t)=E_0\exp \biggl(-\frac{t}{\tau}\biggr)
 \end{equation*}
 
-\subsubsection*{Rate of dissipation.} The energy of an oscillator is dissipated because it does work against the damping force at the rate (damping force $\times$ velocity). We can see this by differentiating energy with respectto time
+\subsubsection{Rate of dissipation.} The energy of an oscillator is dissipated because it does work against the damping force at the rate (damping force $\times$ velocity). We can see this by differentiating energy with respectto time
 \begin{equation*}
     \frac{dE}{dt}=m\dot{x}\ddot{x}+kx\dot{x}=(m\ddot{x}+kx)\dot{x}
 \end{equation*}
@@ -295,7 +295,7 @@ since the damping force $F_d=m\ddot{x}+kx=-b\dot{x}$, we can write
     \frac{dE}{dt}=-b\dot{x}^2
 \end{equation*}
 
-\subsection*{Q factor}
+\subsection{Q factor}
 The quality factor Q of the oscillator describe how good an oscillator is, where we imply that the smaller the degree of damping the higher the quality of the oscillator. Oscillator with a high Q-value would make an appreciable number of oscillations before its energy is reduced substantially. The quality factor Q is defined as
 \begin{equation*}
     Q=\frac{\omega_0}{\gamma}
@@ -334,8 +334,8 @@ and the angular frequency $\omega$
 \end{equation*}
 This confirm confirms our assumption that $\omega$ is equal to $\omega_0$ to a good approximation under most circumstances. Even when $Q$ is as low as 5, $\omega$ is different from $\omega_0$ by just $0.5\%$.
 
-\subsection*{Forced Oscillations}
-\subsubsection*{Undamped forced oscillations.} We begin with a mass $m$ on a horizontal spring with a periodic driving force $F = F_0 \cos \omega t$ is applied to it. We obtain
+\subsection{Forced Oscillations}
+\subsubsection{Undamped forced oscillations.} We begin with a mass $m$ on a horizontal spring with a periodic driving force $F = F_0 \cos \omega t$ is applied to it. We obtain
 \begin{equation*}
     m\ddot{x}+kx=F_0 \cos \omega t
 \end{equation*}
@@ -379,7 +379,7 @@ To solve our original, we take the real part
 \end{equation*}
 The fractional term is the amplitude of our oscillator as function of $\omega$ or $A(\omega)$.
 
-\subsubsection*{Damped forced oscillations.} We add the damping term into our equation
+\subsubsection{Damped forced oscillations.} We add the damping term into our equation
 \begin{equation*}
     m\ddot{x}+b\dot{x}+kx=F_0 \cos \omega t
 \end{equation*}
